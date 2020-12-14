@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="HexagonView">
+        <attr name="exampleString" format="string" />
+    </declare-styleable>
+</resources>

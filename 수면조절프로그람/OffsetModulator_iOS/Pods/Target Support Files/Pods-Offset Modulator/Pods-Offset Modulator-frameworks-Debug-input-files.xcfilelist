@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Offset Modulator/Pods-Offset Modulator-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
+${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework

@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		866D8321246EE76E008B1A0C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866D8320246EE76E008B1A0C /* Common.swift */; };
+		866D8323246F0685008B1A0C /* PlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866D8322246F0685008B1A0C /* PlaylistVC.swift */; };
+		866D8325246F0B8D008B1A0C /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866D8324246F0B8D008B1A0C /* MusicTableViewCell.swift */; };
+		86741BEE246D10BC006A6EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86741BED246D10BC006A6EBF /* AppDelegate.swift */; };
+		86741BF0246D10BC006A6EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86741BEF246D10BC006A6EBF /* SceneDelegate.swift */; };
+		86741BF2246D10BC006A6EBF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86741BF1246D10BC006A6EBF /* MainVC.swift */; };
+		86741BF5246D10BC006A6EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86741BF3246D10BC006A6EBF /* Main.storyboard */; };
+		86741BF7246D10BE006A6EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86741BF6246D10BE006A6EBF /* Assets.xcassets */; };
+		86741BFA246D10BE006A6EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86741BF8246D10BE006A6EBF /* LaunchScreen.storyboard */; };
+		86741C05246D3E60006A6EBF /* LaunchScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86741C04246D3E60006A6EBF /* LaunchScreenManager.swift */; };
+		86741C07246D3EEE006A6EBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86741C06246D3EEE006A6EBF /* LaunchScreen.xib */; };
+		86741C0A246D6574006A6EBF /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86741C09246D6574006A6EBF /* ShadowLabel.swift */; };
+		86A5775E247087BC00096526 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A5775D247087BC00096526 /* SettingsVC.swift */; };
+		86A577802473190500096526 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A5777F2473190500096526 /* Prefs.swift */; };
+		97CE5C38FD42B14957128EA5 /* Pods_Offset_Modulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9848BD29A938CBCF9749A9 /* Pods_Offset_Modulator.framework */; };
+		C484697824A4285B002360A8 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484697724A4285B002360A8 /* ChartViewController.swift */; };
+		C4ADB0A824ABA8A600528306 /* soundscape2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0A424ABA8A500528306 /* soundscape2.mp3 */; };
+		C4ADB0A924ABA8A600528306 /* soundscape1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0A524ABA8A500528306 /* soundscape1.mp3 */; };
+		C4ADB0AA24ABA8A600528306 /* soundscape4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0A624ABA8A500528306 /* soundscape4.mp3 */; };
+		C4ADB0AB24ABA8A600528306 /* soundscape3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0A724ABA8A600528306 /* soundscape3.mp3 */; };
+		C4ADB0B824ABA8DA00528306 /* soundscape7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0B224ABA8D900528306 /* soundscape7.mp3 */; };
+		C4ADB0B924ABA8DA00528306 /* soundscape6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0B324ABA8D900528306 /* soundscape6.mp3 */; };
+		C4ADB0BA24ABA8DA00528306 /* soundscape5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0B424ABA8D900528306 /* soundscape5.mp3 */; };
+		C4ADB0BB24ABA8DA00528306 /* soundscape8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0B524ABA8DA00528306 /* soundscape8.mp3 */; };
+		C4ADB0BC24ABA8DA00528306 /* soundscape10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0B624ABA8DA00528306 /* soundscape10.mp3 */; };
+		C4ADB0BD24ABA8DA00528306 /* soundscape9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0B724ABA8DA00528306 /* soundscape9.mp3 */; };
+		C4ADB0C324ABA8EF00528306 /* soundscape12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0BE24ABA8EE00528306 /* soundscape12.mp3 */; };
+		C4ADB0C424ABA8EF00528306 /* soundscape11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0BF24ABA8EE00528306 /* soundscape11.mp3 */; };
+		C4ADB0C524ABA8EF00528306 /* soundscape13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0C024ABA8EE00528306 /* soundscape13.mp3 */; };
+		C4ADB0C624ABA8EF00528306 /* soundscape14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0C124ABA8EF00528306 /* soundscape14.mp3 */; };
+		C4ADB0C724ABA8EF00528306 /* soundscape15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0C224ABA8EF00528306 /* soundscape15.mp3 */; };
+		C4ADB0CD24ABA90200528306 /* soundscape17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0C824ABA90100528306 /* soundscape17.mp3 */; };
+		C4ADB0CE24ABA90200528306 /* soundscape20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0C924ABA90200528306 /* soundscape20.mp3 */; };
+		C4ADB0CF24ABA90200528306 /* soundscape19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0CA24ABA90200528306 /* soundscape19.mp3 */; };
+		C4ADB0D024ABA90200528306 /* soundscape16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0CB24ABA90200528306 /* soundscape16.mp3 */; };
+		C4ADB0D124ABA90200528306 /* soundscape18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4ADB0CC24ABA90200528306 /* soundscape18.mp3 */; };
+		C4C1E867248F6AB200E4ED44 /* SoundscapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C1E866248F6AB200E4ED44 /* SoundscapeItem.swift */; };
+		C4C1E869248F7F5C00E4ED44 /* SoundscapeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C1E868248F7F5C00E4ED44 /* SoundscapeVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C9848BD29A938CBCF9749A9 /* Pods_Offset_Modulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offset_Modulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		866D8320246EE76E008B1A0C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		866D8322246F0685008B1A0C /* PlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistVC.swift; sourceTree = "<group>"; };
+		866D8324246F0B8D008B1A0C /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		86741BEA246D10BC006A6EBF /* Offset Modulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Offset Modulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86741BED246D10BC006A6EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86741BEF246D10BC006A6EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86741BF1246D10BC006A6EBF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		86741BF4246D10BC006A6EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86741BF6246D10BE006A6EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86741BF9246D10BE006A6EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86741BFB246D10BE006A6EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86741C04246D3E60006A6EBF /* LaunchScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenManager.swift; sourceTree = "<group>"; };
+		86741C06246D3EEE006A6EBF /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		86741C09246D6574006A6EBF /* ShadowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
+		86A5775D247087BC00096526 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		86A5777F2473190500096526 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		A255796852D943BDC3DD4206 /* Pods-Offset Modulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offset Modulator.debug.xcconfig"; path = "Target Support Files/Pods-Offset Modulator/Pods-Offset Modulator.debug.xcconfig"; sourceTree = "<group>"; };
+		C484697724A4285B002360A8 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		C4ADB0A424ABA8A500528306 /* soundscape2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape2.mp3; sourceTree = "<group>"; };
+		C4ADB0A524ABA8A500528306 /* soundscape1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape1.mp3; sourceTree = "<group>"; };
+		C4ADB0A624ABA8A500528306 /* soundscape4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape4.mp3; sourceTree = "<group>"; };
+		C4ADB0A724ABA8A600528306 /* soundscape3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape3.mp3; sourceTree = "<group>"; };
+		C4ADB0B224ABA8D900528306 /* soundscape7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape7.mp3; sourceTree = "<group>"; };
+		C4ADB0B324ABA8D900528306 /* soundscape6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape6.mp3; sourceTree = "<group>"; };
+		C4ADB0B424ABA8D900528306 /* soundscape5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape5.mp3; sourceTree = "<group>"; };
+		C4ADB0B524ABA8DA00528306 /* soundscape8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape8.mp3; sourceTree = "<group>"; };
+		C4ADB0B624ABA8DA00528306 /* soundscape10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape10.mp3; sourceTree = "<group>"; };
+		C4ADB0B724ABA8DA00528306 /* soundscape9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape9.mp3; sourceTree = "<group>"; };
+		C4ADB0BE24ABA8EE00528306 /* soundscape12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape12.mp3; sourceTree = "<group>"; };
+		C4ADB0BF24ABA8EE00528306 /* soundscape11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape11.mp3; sourceTree = "<group>"; };
+		C4ADB0C024ABA8EE00528306 /* soundscape13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape13.mp3; sourceTree = "<group>"; };
+		C4ADB0C124ABA8EF00528306 /* soundscape14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape14.mp3; sourceTree = "<group>"; };
+		C4ADB0C224ABA8EF00528306 /* soundscape15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape15.mp3; sourceTree = "<group>"; };
+		C4ADB0C824ABA90100528306 /* soundscape17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape17.mp3; sourceTree = "<group>"; };
+		C4ADB0C924ABA90200528306 /* soundscape20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape20.mp3; sourceTree = "<group>"; };
+		C4ADB0CA24ABA90200528306 /* soundscape19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape19.mp3; sourceTree = "<group>"; };
+		C4ADB0CB24ABA90200528306 /* soundscape16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape16.mp3; sourceTree = "<group>"; };
+		C4ADB0CC24ABA90200528306 /* soundscape18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundscape18.mp3; sourceTree = "<group>"; };
+		C4C1E866248F6AB200E4ED44 /* SoundscapeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeItem.swift; sourceTree = "<group>"; };
+		C4C1E868248F7F5C00E4ED44 /* SoundscapeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeVC.swift; sourceTree = "<group>"; };
+		CEE9C9A037CA27E57285F07A /* Pods-Offset Modulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offset Modulator.release.xcconfig"; path = "Target Support Files/Pods-Offset Modulator/Pods-Offset Modulator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86741BE7246D10BC006A6EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97CE5C38FD42B14957128EA5 /* Pods_Offset_Modulator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86741BE1246D10BC006A6EBF = {
+			isa = PBXGroup;
+			children = (
+				86741BEC246D10BC006A6EBF /* Offset Modulator */,
+				86741BEB246D10BC006A6EBF /* Products */,
+				F06AD3751EF63F2E73A03903 /* Pods */,
+				DCA98494CAC2E372F6D7FDFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86741BEB246D10BC006A6EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86741BEA246D10BC006A6EBF /* Offset Modulator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86741BEC246D10BC006A6EBF /* Offset Modulator */ = {
+			isa = PBXGroup;
+			children = (
+				86741BED246D10BC006A6EBF /* AppDelegate.swift */,
+				86741BEF246D10BC006A6EBF /* SceneDelegate.swift */,
+				86741BF6246D10BE006A6EBF /* Assets.xcassets */,
+				86741BFB246D10BE006A6EBF /* Info.plist */,
+				C4CADE7324890984007F7C9E /* soundscapes */,
+				86741C01246D10D8006A6EBF /* Model */,
+				86741C02246D10E1006A6EBF /* View */,
+				86741C03246D10ED006A6EBF /* Controller */,
+			);
+			path = "Offset Modulator";
+			sourceTree = "<group>";
+		};
+		86741C01246D10D8006A6EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				866D8320246EE76E008B1A0C /* Common.swift */,
+				866D8324246F0B8D008B1A0C /* MusicTableViewCell.swift */,
+				86A5777F2473190500096526 /* Prefs.swift */,
+				C4C1E866248F6AB200E4ED44 /* SoundscapeItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86741C02246D10E1006A6EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86741BF8246D10BE006A6EBF /* LaunchScreen.storyboard */,
+				86741BF3246D10BC006A6EBF /* Main.storyboard */,
+				86741C06246D3EEE006A6EBF /* LaunchScreen.xib */,
+				86741C09246D6574006A6EBF /* ShadowLabel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86741C03246D10ED006A6EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				86741C04246D3E60006A6EBF /* LaunchScreenManager.swift */,
+				86741BF1246D10BC006A6EBF /* MainVC.swift */,
+				866D8322246F0685008B1A0C /* PlaylistVC.swift */,
+				86A5775D247087BC00096526 /* SettingsVC.swift */,
+				C4C1E868248F7F5C00E4ED44 /* SoundscapeVC.swift */,
+				C484697724A4285B002360A8 /* ChartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4CADE7324890984007F7C9E /* soundscapes */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADB0A524ABA8A500528306 /* soundscape1.mp3 */,
+				C4ADB0A424ABA8A500528306 /* soundscape2.mp3 */,
+				C4ADB0A724ABA8A600528306 /* soundscape3.mp3 */,
+				C4ADB0A624ABA8A500528306 /* soundscape4.mp3 */,
+				C4ADB0B424ABA8D900528306 /* soundscape5.mp3 */,
+				C4ADB0B324ABA8D900528306 /* soundscape6.mp3 */,
+				C4ADB0B224ABA8D900528306 /* soundscape7.mp3 */,
+				C4ADB0B524ABA8DA00528306 /* soundscape8.mp3 */,
+				C4ADB0B724ABA8DA00528306 /* soundscape9.mp3 */,
+				C4ADB0B624ABA8DA00528306 /* soundscape10.mp3 */,
+				C4ADB0BF24ABA8EE00528306 /* soundscape11.mp3 */,
+				C4ADB0BE24ABA8EE00528306 /* soundscape12.mp3 */,
+				C4ADB0C024ABA8EE00528306 /* soundscape13.mp3 */,
+				C4ADB0C124ABA8EF00528306 /* soundscape14.mp3 */,
+				C4ADB0C224ABA8EF00528306 /* soundscape15.mp3 */,
+				C4ADB0CB24ABA90200528306 /* soundscape16.mp3 */,
+				C4ADB0C824ABA90100528306 /* soundscape17.mp3 */,
+				C4ADB0CC24ABA90200528306 /* soundscape18.mp3 */,
+				C4ADB0CA24ABA90200528306 /* soundscape19.mp3 */,
+				C4ADB0C924ABA90200528306 /* soundscape20.mp3 */,
+			);
+			path = soundscapes;
+			sourceTree = "<group>";
+		};
+		DCA98494CAC2E372F6D7FDFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C9848BD29A938CBCF9749A9 /* Pods_Offset_Modulator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F06AD3751EF63F2E73A03903 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A255796852D943BDC3DD4206 /* Pods-Offset Modulator.debug.xcconfig */,
+				CEE9C9A037CA27E57285F07A /* Pods-Offset Modulator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86741BE9246D10BC006A6EBF /* Offset Modulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86741BFE246D10BE006A6EBF /* Build configuration list for PBXNativeTarget "Offset Modulator" */;
+			buildPhases = (
+				F8D45E11E619C3AC6B8013BD /* [CP] Check Pods Manifest.lock */,
+				86741BE6246D10BC006A6EBF /* Sources */,
+				86741BE7246D10BC006A6EBF /* Frameworks */,
+				86741BE8246D10BC006A6EBF /* Resources */,
+				2A8DA1A76597990D384C5278 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Offset Modulator";
+			productName = "Offset Modulator";
+			productReference = 86741BEA246D10BC006A6EBF /* Offset Modulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86741BE2246D10BC006A6EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Myong Song Ryang";
+				TargetAttributes = {
+					86741BE9246D10BC006A6EBF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 86741BE5246D10BC006A6EBF /* Build configuration list for PBXProject "Offset Modulator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86741BE1246D10BC006A6EBF;
+			productRefGroup = 86741BEB246D10BC006A6EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86741BE9246D10BC006A6EBF /* Offset Modulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86741BE8246D10BC006A6EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ADB0A824ABA8A600528306 /* soundscape2.mp3 in Resources */,
+				86741C07246D3EEE006A6EBF /* LaunchScreen.xib in Resources */,
+				86741BFA246D10BE006A6EBF /* LaunchScreen.storyboard in Resources */,
+				C4ADB0A924ABA8A600528306 /* soundscape1.mp3 in Resources */,
+				C4ADB0D124ABA90200528306 /* soundscape18.mp3 in Resources */,
+				C4ADB0BA24ABA8DA00528306 /* soundscape5.mp3 in Resources */,
+				C4ADB0C524ABA8EF00528306 /* soundscape13.mp3 in Resources */,
+				C4ADB0C424ABA8EF00528306 /* soundscape11.mp3 in Resources */,
+				C4ADB0CD24ABA90200528306 /* soundscape17.mp3 in Resources */,
+				C4ADB0BD24ABA8DA00528306 /* soundscape9.mp3 in Resources */,
+				C4ADB0BC24ABA8DA00528306 /* soundscape10.mp3 in Resources */,
+				C4ADB0CE24ABA90200528306 /* soundscape20.mp3 in Resources */,
+				C4ADB0C324ABA8EF00528306 /* soundscape12.mp3 in Resources */,
+				C4ADB0C724ABA8EF00528306 /* soundscape15.mp3 in Resources */,
+				C4ADB0C624ABA8EF00528306 /* soundscape14.mp3 in Resources */,
+				86741BF7246D10BE006A6EBF /* Assets.xcassets in Resources */,
+				C4ADB0BB24ABA8DA00528306 /* soundscape8.mp3 in Resources */,
+				C4ADB0AB24ABA8A600528306 /* soundscape3.mp3 in Resources */,
+				C4ADB0D024ABA90200528306 /* soundscape16.mp3 in Resources */,
+				C4ADB0B924ABA8DA00528306 /* soundscape6.mp3 in Resources */,
+				C4ADB0B824ABA8DA00528306 /* soundscape7.mp3 in Resources */,
+				C4ADB0CF24ABA90200528306 /* soundscape19.mp3 in Resources */,
+				86741BF5246D10BC006A6EBF /* Main.storyboard in Resources */,
+				C4ADB0AA24ABA8A600528306 /* soundscape4.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A8DA1A76597990D384C5278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Offset Modulator/Pods-Offset Modulator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Offset Modulator/Pods-Offset Modulator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Offset Modulator/Pods-Offset Modulator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D45E11E619C3AC6B8013BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Offset Modulator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86741BE6246D10BC006A6EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866D8323246F0685008B1A0C /* PlaylistVC.swift in Sources */,
+				86741C0A246D6574006A6EBF /* ShadowLabel.swift in Sources */,
+				86A577802473190500096526 /* Prefs.swift in Sources */,
+				C4C1E869248F7F5C00E4ED44 /* SoundscapeVC.swift in Sources */,
+				C484697824A4285B002360A8 /* ChartViewController.swift in Sources */,
+				C4C1E867248F6AB200E4ED44 /* SoundscapeItem.swift in Sources */,
+				86741BF2246D10BC006A6EBF /* MainVC.swift in Sources */,
+				86741BEE246D10BC006A6EBF /* AppDelegate.swift in Sources */,
+				86741C05246D3E60006A6EBF /* LaunchScreenManager.swift in Sources */,
+				866D8321246EE76E008B1A0C /* Common.swift in Sources */,
+				86741BF0246D10BC006A6EBF /* SceneDelegate.swift in Sources */,
+				866D8325246F0B8D008B1A0C /* MusicTableViewCell.swift in Sources */,
+				86A5775E247087BC00096526 /* SettingsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		86741BF3246D10BC006A6EBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86741BF4246D10BC006A6EBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86741BF8246D10BE006A6EBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86741BF9246D10BE006A6EBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86741BFC246D10BE006A6EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86741BFD246D10BE006A6EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86741BFF246D10BE006A6EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A255796852D943BDC3DD4206 /* Pods-Offset Modulator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6P2KFPS444;
+				INFOPLIST_FILE = "Offset Modulator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = OffsetModulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86741C00246D10BE006A6EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE9C9A037CA27E57285F07A /* Pods-Offset Modulator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6P2KFPS444;
+				INFOPLIST_FILE = "Offset Modulator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = OffsetModulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86741BE5246D10BC006A6EBF /* Build configuration list for PBXProject "Offset Modulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86741BFC246D10BE006A6EBF /* Debug */,
+				86741BFD246D10BE006A6EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86741BFE246D10BE006A6EBF /* Build configuration list for PBXNativeTarget "Offset Modulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86741BFF246D10BE006A6EBF /* Debug */,
+				86741C00246D10BE006A6EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86741BE2246D10BC006A6EBF /* Project object */;
+}

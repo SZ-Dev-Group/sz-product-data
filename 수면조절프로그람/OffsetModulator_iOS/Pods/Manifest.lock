@@ -1,0 +1,26 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - iOSDropDown (0.3.4)
+  - MarqueeLabel (4.0.2)
+
+DEPENDENCIES:
+  - Charts
+  - iOSDropDown
+  - MarqueeLabel
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - iOSDropDown
+    - MarqueeLabel
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
+
+PODFILE CHECKSUM: 98097527bfcdb2d01134eb8d7ee8c3c61f057229
+
+COCOAPODS: 1.9.2
